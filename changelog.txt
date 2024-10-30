@@ -1,0 +1,72 @@
+*** Changelog ***
+= 2.2.7 - 2024-07-05 =
+* Update - `wc_centrobill_get_useragent` and `wc_centrobill_get_browser_accept_header` functions explicitly return strings.
+* Fix - Remove `userAgent` and `browserAcceptHeader` from default consumer data preparation in `WC_Centrobill_Api::prepareConsumerData` and add them conditionally.
+
+= 2.2.6 - 2022-11-08 =
+* Add - Clear out plugin options after uninstall from the site (uninstall.php)
+
+= 2.2.5 - 2022-07-15 =
+* Update - Enable plugin availability for all stores
+
+= 2.2.4 - 2021-12-17 =
+* Fix - Wrong amount type (must be a number)
+
+= 2.2.3 - 2021-10-18 =
+* Fix - Displaying available payment methods on the checkout page affects other gateways
+* Fix - Link is now correctly in readme.txt
+
+= 2.2.2 - 2021-10-12 =
+* Update - Crypto gateway availability (show crypto for one-time products or subscription products with a price limit)
+
+= 2.2.1 - 2021-10-07 =
+* Update - Plugin version
+
+= 2.2.0 - 2021-10-06 =
+* Add - Crypto gateway
+
+= 2.1.0 - 2021-08-28 =
+* Add - Redirect to Centrobill payment page instead of using the integrated payment form on the checkout page
+
+= 2.0.7 - 2021-08-25 =
+* Fix - Wrong IP address for recurring payments
+
+= 2.0.6 - 2021-08-16 =
+* Add - Update order status before redirecting to the 'Thank You' page
+* Remove - Hook `woocommerce_before_thankyou`
+
+= 2.0.5 - 2021-08-10 =
+* Update - readme.txt - Add a FAQ section "How to apply VAT for EU users on top of the product price"
+* Add - vat_rates.csv
+
+= 2.0.4 - 2021-06-15 =
+* Update - readme.txt
+* Add - changelog.txt
+
+= 2.0.3 - 2021-06-09 =
+* Fix - Renaming gateway ID from `centrobill_cc` to `centrobill`
+* Fix - Substring SKU title (max length - 64 chars)
+
+= 2.0.2 - 2021-04-29 =
+* Add - Enable/disable cardholder name field on checkout form
+
+= 2.0.1 - 2021-04-26 =
+* Add - Collect browser info to payment requests (for 3DS payments)
+* Add - Hook `woocommerce_create_order`
+* Add - Hook `woocommerce_before_thankyou`
+
+= 2.0.0 - 2021-04-19 =
+* Tweak - Refactored code base
+* Add - Credit Card form
+* Add - Bancontact
+* Add - EPS
+* Add - Giropay
+* Add - iDeal
+* Add - MyBank
+* Add - Online Banking
+* Add - Przelewy24
+* Add - SEPA Direct Debit
+* Add - SOFORT Banking
+
+= 1.0.0 - 2018-01-11 =
+* First Release
